@@ -362,7 +362,7 @@
         <sensor name="lds_lfcd_sensor" type="ray">
           <always_on>true</always_on>
           <visualize>true</visualize>
-          <pose>0 0 -0.01 0 3.14159 0</pose>
+          <pose>0 0 -0.01 0 3.14159 1.5708</pose>
           <update_rate>5</update_rate>
           <ray>
             <scan>
