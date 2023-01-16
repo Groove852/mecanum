@@ -362,15 +362,15 @@
         <sensor name="lds_lfcd_sensor" type="ray">
           <always_on>true</always_on>
           <visualize>true</visualize>
-          <pose>0 0 -0.01 0 0 -1.130920</pose>
+          <pose>0 0 -0.01 0 3.14159 0</pose>
           <update_rate>5</update_rate>
           <ray>
             <scan>
               <horizontal>
                 <samples>666</samples>
                 <resolution>1.000000</resolution>
-                <min_angle>-3.14159</min_angle>
-                <max_angle>3.14159</max_angle>
+                <min_angle>0</min_angle>
+                <max_angle>-6.28319</max_angle>
               </horizontal>
             </scan>
             <range>

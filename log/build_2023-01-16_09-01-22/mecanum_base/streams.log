@@ -1,0 +1,182 @@
+[0.019s] Invoking command in '/home/nequamy/mecanum_ws/src/mecanum_base/build/mecanum_base': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nequamy/ros2_ws/install/learning:/home/nequamy/turtlebot3_ws/install/turtlebot3_teleop:/home/nequamy/turtlebot3_ws/install/turtlebot3_example:/home/nequamy/pr_ws/install/pr_nav_ros2:/home/nequamy/pr_ws/install/gazebo_noiser:/home/nequamy/nav2_ws/install/nav2_simple_commander:/opt/ros/humble /usr/bin/cmake /home/nequamy/mecanum_ws/src/mecanum_base -DCMAKE_INSTALL_PREFIX=/home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base
+[0.167s] -- The C compiler identification is GNU 11.3.0
+[0.243s] -- The CXX compiler identification is GNU 11.3.0
+[0.249s] -- Detecting C compiler ABI info
+[0.320s] -- Detecting C compiler ABI info - done
+[0.326s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.327s] -- Detecting C compile features
+[0.327s] -- Detecting C compile features - done
+[0.329s] -- Detecting CXX compiler ABI info
+[0.408s] -- Detecting CXX compiler ABI info - done
+[0.416s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.416s] -- Detecting CXX compile features
+[0.416s] -- Detecting CXX compile features - done
+[0.427s] -- Found ament_cmake: 1.3.3 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.644s] -- Found Python3: /usr/bin/python3.10 (found version "3.10.6") found components: Interpreter 
+[0.746s] -- Found gazebo_dev: 3.7.0 (/opt/ros/humble/share/gazebo_dev/cmake)
+[0.756s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[0.760s] -- Checking for module 'bullet>=2.82'
+[0.772s] --   Found bullet, version 3.05
+[0.888s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[0.952s] -- Found assimp: /usr/include (found version "5.2.0") 
+[0.979s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.257s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.281s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.293s] -- Looking for ignition-math6 -- found version 6.13.0
+[1.302s] -- Searching for dependencies of ignition-math6
+[1.303s] -- Looking for OGRE...
+[1.303s] -- OGRE_PREFIX_WATCH changed.
+[1.310s] -- Checking for module 'OGRE'
+[1.340s] --   Found OGRE, version 1.9.0
+[1.402s] -- Found Ogre Ghadamon (1.9.0)
+[1.424s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.435s] -- Looking for OGRE_Paging...
+[1.448s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.448s] -- Looking for OGRE_Terrain...
+[1.459s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.459s] -- Looking for OGRE_Property...
+[1.473s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.473s] -- Looking for OGRE_RTShaderSystem...
+[1.485s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.485s] -- Looking for OGRE_Volume...
+[1.497s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.497s] -- Looking for OGRE_Overlay...
+[1.509s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[1.841s] -- Looking for ignition-math6 -- found version 6.13.0
+[1.844s] -- Looking for ignition-transport8 -- found version 8.2.1
+[1.845s] -- Searching for dependencies of ignition-transport8
+[1.860s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[1.870s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[1.874s] -- Checking for module 'libzmq >= 4'
+[1.887s] --   Found libzmq , version 4.3.4
+[1.924s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[1.930s] -- Checking for module 'uuid'
+[1.945s] --   Found uuid, version 2.37.2
+[1.975s] -- Found UUID: TRUE  
+[1.979s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[1.979s] -- Searching for dependencies of ignition-msgs5
+[1.994s] -- Looking for ignition-math6 -- found version 6.13.0
+[1.999s] -- Checking for module 'tinyxml2'
+[2.016s] --   Found tinyxml2, version 9.0.0
+[2.050s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.054s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.055s] -- Searching for dependencies of ignition-common3
+[2.055s] -- Looking for dlfcn.h - found
+[2.056s] -- Looking for libdl - found
+[2.057s] -- Found DL: TRUE  
+[2.069s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[2.069s] -- Searching for <ignition-common3> component [graphics]
+[2.072s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[2.073s] -- Searching for dependencies of ignition-common3-graphics
+[2.073s] -- Looking for ignition-math6 -- found version 6.13.0
+[2.077s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[2.077s] -- Searching for dependencies of ignition-fuel_tools4
+[2.158s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[2.167s] -- Checking for module 'jsoncpp'
+[2.180s] --   Found jsoncpp, version 1.9.5
+[2.208s] -- Found JSONCPP: TRUE  
+[2.222s] -- Checking for module 'libzip'
+[2.237s] --   Found libzip, version 1.7.3
+[2.265s] -- Found ZIP: TRUE  
+[2.265s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.266s] -- Looking for ignition-math6 -- found version 6.13.0
+[2.266s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.271s] -- Gazebo version: 11.10
+[2.271s] -- Checking for module 'tbb'
+[2.286s] --   Found tbb, version 2021.5.0
+[2.335s] -- Found gazebo_msgs: 3.7.0 (/opt/ros/humble/share/gazebo_msgs/cmake)
+[2.376s] -- Found rosidl_generator_c: 3.1.4 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[2.383s] -- Found rosidl_adapter: 3.1.4 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[2.393s] -- Found rosidl_generator_cpp: 3.1.4 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[2.409s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.443s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.683s] -- Found gazebo_ros: 3.7.0 (/opt/ros/humble/share/gazebo_ros/cmake)
+[2.748s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[2.753s] -- Found rmw_fastrtps_cpp: 6.2.2 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[2.860s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[2.883s] -- Found FastRTPS: /opt/ros/humble/include  
+[2.937s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[2.951s] -- Found Threads: TRUE  
+[3.052s] -- Found nav_msgs: 4.2.2 (/opt/ros/humble/share/nav_msgs/cmake)
+[3.110s] -- Found tf2: 0.25.1 (/opt/ros/humble/share/tf2/cmake)
+[3.130s] -- Found tf2_geometry_msgs: 0.25.1 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[3.143s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[3.144s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[3.144s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[3.398s] -- Found ament_lint_auto: 0.12.4 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[3.486s] -- Added test 'cppcheck' to perform static code analysis on C / C++ code
+[3.486s] -- Configured cppcheck include dirs: 
+[3.486s] -- Configured cppcheck exclude dirs and/or files: 
+[3.488s] -- Added test 'flake8' to check Python code syntax and style conventions
+[3.490s] -- Added test 'lint_cmake' to check CMake code style
+[3.491s] -- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+[3.497s] -- Added test 'uncrustify' to check C / C++ code style
+[3.497s] -- Configured uncrustify additional arguments: 
+[3.498s] -- Added test 'xmllint' to check XML markup files
+[3.500s] -- Configuring done
+[3.504s] -- Generating done
+[3.506s] -- Build files have been written to: /home/nequamy/mecanum_ws/src/mecanum_base/build/mecanum_base
+[3.528s] Invoked command in '/home/nequamy/mecanum_ws/src/mecanum_base/build/mecanum_base' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nequamy/ros2_ws/install/learning:/home/nequamy/turtlebot3_ws/install/turtlebot3_teleop:/home/nequamy/turtlebot3_ws/install/turtlebot3_example:/home/nequamy/pr_ws/install/pr_nav_ros2:/home/nequamy/pr_ws/install/gazebo_noiser:/home/nequamy/nav2_ws/install/nav2_simple_commander:/opt/ros/humble /usr/bin/cmake /home/nequamy/mecanum_ws/src/mecanum_base -DCMAKE_INSTALL_PREFIX=/home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base
+[3.530s] Invoking command in '/home/nequamy/mecanum_ws/src/mecanum_base/build/mecanum_base': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nequamy/ros2_ws/install/learning:/home/nequamy/turtlebot3_ws/install/turtlebot3_teleop:/home/nequamy/turtlebot3_ws/install/turtlebot3_example:/home/nequamy/pr_ws/install/pr_nav_ros2:/home/nequamy/pr_ws/install/gazebo_noiser:/home/nequamy/nav2_ws/install/nav2_simple_commander:/opt/ros/humble /usr/bin/cmake --build /home/nequamy/mecanum_ws/src/mecanum_base/build/mecanum_base -- -j8 -l8
+[3.570s] Invoked command in '/home/nequamy/mecanum_ws/src/mecanum_base/build/mecanum_base' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nequamy/ros2_ws/install/learning:/home/nequamy/turtlebot3_ws/install/turtlebot3_teleop:/home/nequamy/turtlebot3_ws/install/turtlebot3_example:/home/nequamy/pr_ws/install/pr_nav_ros2:/home/nequamy/pr_ws/install/gazebo_noiser:/home/nequamy/nav2_ws/install/nav2_simple_commander:/opt/ros/humble /usr/bin/cmake --build /home/nequamy/mecanum_ws/src/mecanum_base/build/mecanum_base -- -j8 -l8
+[3.604s] Invoking command in '/home/nequamy/mecanum_ws/src/mecanum_base/build/mecanum_base': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nequamy/ros2_ws/install/learning:/home/nequamy/turtlebot3_ws/install/turtlebot3_teleop:/home/nequamy/turtlebot3_ws/install/turtlebot3_example:/home/nequamy/pr_ws/install/pr_nav_ros2:/home/nequamy/pr_ws/install/gazebo_noiser:/home/nequamy/nav2_ws/install/nav2_simple_commander:/opt/ros/humble /usr/bin/cmake --install /home/nequamy/mecanum_ws/src/mecanum_base/build/mecanum_base
+[3.611s] -- Install configuration: ""
+[3.611s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/ament_index/resource_index/package_run_dependencies/mecanum_base
+[3.611s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/ament_index/resource_index/parent_prefix_path/mecanum_base
+[3.611s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/environment/ament_prefix_path.sh
+[3.611s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/environment/ament_prefix_path.dsv
+[3.611s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/environment/path.sh
+[3.611s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/environment/path.dsv
+[3.612s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/local_setup.bash
+[3.612s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/local_setup.sh
+[3.612s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/local_setup.zsh
+[3.612s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/local_setup.dsv
+[3.612s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/package.dsv
+[3.612s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/ament_index/resource_index/packages/mecanum_base
+[3.612s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/cmake/mecanum_baseConfig.cmake
+[3.612s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/cmake/mecanum_baseConfig-version.cmake
+[3.612s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/package.xml
+[3.612s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/include
+[3.612s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/include/mecanum_base
+[3.613s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/config
+[3.613s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/config/ekf.yaml
+[3.613s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/config/joint_names_mecanum_ultimate.yaml
+[3.613s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/launch
+[3.613s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/launch/urdf_ultimate.launch.py
+[3.613s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/launch/sdf.launch.py
+[3.613s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/maps
+[3.613s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/meshes
+[3.613s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/meshes/Hand_base.dae
+[3.627s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/meshes/right_forward_drive_link.dae
+[3.629s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/meshes/right_back_drive_link.dae
+[3.631s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/meshes/Gripper.dae
+[3.647s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/meshes/Hand_rotator.dae
+[3.650s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/meshes/lidar.dae
+[3.650s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/meshes/left_back_drive_link.dae
+[3.651s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/meshes/base_link.dae
+[3.666s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/meshes/Hand_raise.dae
+[3.671s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/meshes/Gripper_rotator.dae
+[3.703s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/meshes/Gripper_raise.dae
+[3.725s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/meshes/left_forward_drive_link.dae
+[3.727s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/models
+[3.727s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/models/mecanum_hand
+[3.727s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/models/mecanum_hand/model.sdf
+[3.727s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/models/mecanum_hand/model.config
+[3.727s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/models/mecanum_sdf
+[3.727s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/models/mecanum_sdf/model.sdf
+[3.727s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/models/mecanum_sdf/model.config
+[3.727s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/models/mecanum_ultimate
+[3.727s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/models/mecanum_ultimate/model.sdf
+[3.727s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/models/mecanum_ultimate/model.config
+[3.728s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/params
+[3.728s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/rviz
+[3.728s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/rviz/rviz_basec_settings.rviz
+[3.728s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/src
+[3.728s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/urdf
+[3.728s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/urdf/mecanum_ultimate_fixed.urdf
+[3.728s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/urdf/mecanum_ultimate_fixed.csv
+[3.728s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/worlds
+[3.728s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/scripts
+[3.728s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/share/mecanum_base/scripts/teleop.py
+[3.728s] -- Installing: /home/nequamy/mecanum_ws/src/mecanum_base/install/mecanum_base/lib/mecanum_base/teleop.py
+[3.730s] Invoked command in '/home/nequamy/mecanum_ws/src/mecanum_base/build/mecanum_base' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/nequamy/ros2_ws/install/learning:/home/nequamy/turtlebot3_ws/install/turtlebot3_teleop:/home/nequamy/turtlebot3_ws/install/turtlebot3_example:/home/nequamy/pr_ws/install/pr_nav_ros2:/home/nequamy/pr_ws/install/gazebo_noiser:/home/nequamy/nav2_ws/install/nav2_simple_commander:/opt/ros/humble /usr/bin/cmake --install /home/nequamy/mecanum_ws/src/mecanum_base/build/mecanum_base
