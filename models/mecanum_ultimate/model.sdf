@@ -1,0 +1,1039 @@
+<?xml version='1.0'?>
+<sdf version='1.5'>
+  <model name='mecanum_ultimate'>
+    <model name='mecanum_sdf'>
+      <pose>-0.011491 0.000672 -0.210422 0 -0 0</pose>
+      <link name="base_footprint"/>
+
+      <link name='base_link'>
+        <pose>-0.002705 -0.000555 -0.008738 0 -0 0</pose>
+        <inertial>
+          <mass>87.4316889136154</mass>
+          <inertia>
+            <ixx>0.638291307943617</ixx>
+            <ixy>0.000100498109364325</ixy>
+            <ixz>-0.00220050983924655</ixz>
+            <iyy>1.30888292944499</iyy>
+            <iyz>-2.99473825581161E-06</iyz>
+            <izz>0.893196262452726</izz>
+          </inertia>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+
+        <collision name='base_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/base_link.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+
+        <visual name='base_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/base_link.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>.175 .175 .175  1.0</ambient>
+            <diffuse>.175 .175 .175  1.0</diffuse>
+            <specular>.175 .175 .175 1.000000 1.500000</specular>
+          </material>
+        </visual>
+      </link>
+
+      <link name='right_forward_drive_link'>
+        <pose>-0.257245 0.244251 -0.02496 0 -0 0</pose>
+
+        <inertial>
+          <mass>4.1354</mass>
+          <inertia>
+            <ixx>0.004263</ixx>
+            <ixy>1.4345E-06</ixy>
+            <ixz>-2.6605E-10</ixz>
+            <iyy>0.0042449</iyy>
+            <iyz>-2.267E-11</iyz>
+            <izz>0.007419</izz>
+          </inertia>
+          <pose>0 0 0 0 0 0</pose>
+        </inertial>
+        
+        <visual name='right_forward_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/right_forward_drive_link.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>.3 .3 .3  1.0</ambient>
+            <diffuse>.7 .7 .7  1.0</diffuse>
+            <specular>0.01 0.01 0.01 1.000000 1.500000</specular>
+          </material>
+        </visual>
+
+        <collision name='right_forward_collision'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/right_forward_drive_link.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>10.01</mu>
+                <mu2>10.01</mu2>
+                <fdir1>0 0 1</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>100000.0</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0.0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1000000000.0</kp>
+                <kd>10000.0</kd>
+                <max_vel>100.0</max_vel>
+                <min_depth>0.01</min_depth>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+
+      <link name='left_forward_drive_link'>
+        <pose>-0.257245 -0.243974 -0.02496 0 -0 0</pose>
+
+        <inertial>
+          <mass>4.1356</mass>
+          <inertia>
+            <ixx>0.0042629</ixx>
+            <ixy>1.4255E-06</ixy>
+            <ixz>1.6397E-09</ixz>
+            <iyy>0.0042448</iyy>
+            <iyz>7.6646E-10</iyz>
+            <izz>0.0074189</izz>
+          </inertia>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+
+        <visual name='left_forward_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/right_forward_drive_link.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>.3 .3 .3  1.0</ambient>
+            <diffuse>.7 .7 .7  1.0</diffuse>
+            <specular>0.01 0.01 0.01 1.000000 1.500000</specular>
+          </material>
+        </visual>
+
+        <collision name='left_forward_collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/right_forward_drive_link.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>10.01</mu>
+                <mu2>10.01</mu2>
+                <fdir1>0 0 1</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>100000.0</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0.0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1000000000.0</kp>
+                <kd>10000.0</kd>
+                <max_vel>100.0</max_vel>
+                <min_depth>0.01</min_depth>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+
+      <link name='right_back_drive_link'>
+        <pose>0.258597 0.244251 -0.02496 0 -0 0</pose>
+
+        <inertial>
+          <mass>4.1356</mass>
+          <inertia>
+            <ixx>0.0042629</ixx>
+            <ixy>1.4357E-06</ixy>
+            <ixz>1.7394E-09</ixz>
+            <iyy>0.0042448</iyy>
+            <iyz>-5.006E-10</iyz>
+            <izz>0.0074189</izz>
+          </inertia>
+          <pose>0 0 0 0 0 0</pose>
+        </inertial>
+
+        <visual name='right_back_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/right_back_drive_link.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>.3 .3 .3  1.0</ambient>
+            <diffuse>.7 .7 .7  1.0</diffuse>
+            <specular>0.01 0.01 0.01 1.000000 1.500000</specular>
+          </material>
+        </visual>
+
+        <collision name='right_back_collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/right_back_drive_link.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>10.01</mu>
+                <mu2>10.01</mu2>
+                <fdir1>0 0 1</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>100000.0</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0.0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1000000000.0</kp>
+                <kd>10000.0</kd>
+                <max_vel>100.0</max_vel>
+                <min_depth>0.01</min_depth>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+
+      <link name='left_back_drive_link'>
+        <pose>0.258597 -0.243974 -0.02496 0 -0 0</pose>
+
+        <inertial>
+          <mass>4.1356</mass>
+          <inertia>
+            <ixx>0.004263</ixx>
+            <ixy>1.4345E-06</ixy>
+            <ixz>-2.6605E-10</ixz>
+            <iyy>0.0042449</iyy>
+            <iyz>-2.267E-11</iyz>
+            <izz>0.007419</izz>
+          </inertia>
+          <pose>0 0 0 0 0 0</pose>
+        </inertial>
+        
+        <visual name='left_back_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/left_back_drive_link.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>.3 .3 .3  1.0</ambient>
+            <diffuse>.7 .7 .7  1.0</diffuse>
+            <specular>0.01 0.01 0.01 1.000000 1.500000</specular>
+          </material>
+        </visual>
+
+        <collision name='left_back_collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/left_back_drive_link.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>10.01</mu>
+                <mu2>10.01</mu2>
+                <fdir1>0 0 1</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>100000.0</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0.0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1000000000.0</kp>
+                <kd>10000.0</kd>
+                <max_vel>100.0</max_vel>
+                <min_depth>0.01</min_depth>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+
+      <link name='left_lidar_link'>
+        <pose>-0.208337 -1e-06 0.157501 -3.14159 -0 1.5708</pose>
+        <inertial>
+          <mass>0.85055</mass>
+          <inertia>
+            <ixx>0.000492</ixx>
+            <ixy>-1.3553E-19</ixy>
+            <ixz>-9.8256E-20</ixz>
+            <iyy>0.0002829</iyy>
+            <iyz>6.6719E-05</iyz>
+            <izz>0.00063278</izz>
+          </inertia>
+        </inertial>
+        
+        <visual name='left_lidar_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/lidar.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient> .3 .3 .3  1.0 </ambient>
+            <diffuse> .7 .7 .7  1.0 </diffuse>
+            <specular> 0.01 0.01 0.01 1.000000 1.500000 </specular>
+          </material>
+        </visual>
+
+        <collision name='left_lidar_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/lidar.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+
+        <sensor name="lds_lfcd_sensor" type="ray">
+          <always_on>true</always_on>
+          <visualize>true</visualize>
+          <pose>0 0 -0.01 0 0 -1.130920</pose>
+          <update_rate>5</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>666</samples>
+                <resolution>1.000000</resolution>
+                <min_angle>-3.14159</min_angle>
+                <max_angle>3.14159</max_angle>
+              </horizontal>
+            </scan>
+            <range>
+              <min>0.10000</min>
+              <max>5.6</max>
+              <resolution>0.015000</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0.0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name="hokuyo_laserscan" filename="libgazebo_ros_ray_sensor.so">
+            <ros>
+              <remapping>~/out:=scan</remapping>
+            </ros>
+            <output_type>sensor_msgs/LaserScan</output_type>
+            <frame_name>odom</frame_name>
+          </plugin>
+        </sensor>
+      </link>
+
+      <!-- <link name='right_lidar_link'>
+        <pose>-0.223980 0.237347 0.127267 0 0 -2.023130</pose>
+        <inertial>
+          <mass>0.85055</mass>
+          <inertia>
+            <ixx>0.000492</ixx>
+            <ixy>-1.3553E-19</ixy>
+            <ixz>-9.8256E-20</ixz>
+            <iyy>0.0002829</iyy>
+            <iyz>6.6719E-05</iyz>
+            <izz>0.00063278</izz>
+          </inertia>
+        </inertial>
+
+        <visual name='right_lidar_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/lidar.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient> .3 .3 .3  1.0 </ambient>
+            <diffuse> .7 .7 .7  1.0 </diffuse>
+            <specular> 0.01 0.01 0.01 1.000000 1.500000 </specular>
+          </material>
+        </visual>
+
+        <collision name='right_lidar_collision'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/lidar.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+        </collision>
+
+        <sensor name="lds_lfcd_sensor" type="ray">
+          <always_on>true</always_on>
+          <visualize>true</visualize>
+          <pose>0 0 -0.01 0 0 -2.023130</pose>
+          <update_rate>5</update_rate>
+          <ray>
+            <scan>
+              <horizontal>
+                <samples>666</samples>
+                <resolution>1.000000</resolution>
+                <min_angle>1.5708</min_angle>
+                <max_angle>-1.74533</max_angle>
+              </horizontal>
+            </scan>
+            <range>
+              <min>0.10000</min>
+              <max>5.6</max>
+              <resolution>0.015000</resolution>
+            </range>
+            <noise>
+              <type>gaussian</type>
+              <mean>0.0</mean>
+              <stddev>0.01</stddev>
+            </noise>
+          </ray>
+          <plugin name="lds_laserscan" filename="libgazebo_ros_ray_sensor.so">
+            <ros>
+              <remapping>~/out:=right_scan</remapping>
+            </ros>
+            <output_type>sensor_msgs/LaserScan</output_type>
+            <frame_name>right_scan</frame_name>
+          </plugin>
+        </sensor>
+      </link> -->
+
+      <joint name="base_joint" type="fixed">
+        <parent>base_footprint</parent>
+        <child>base_link</child>
+        <pose>0.0 0.0 0.1 0 0 0</pose>
+      </joint>
+
+      <joint name='lb_joint' type='fixed'>
+        <parent>base_link</parent>
+        <child>left_back_drive_link</child>
+        <pose>0 0.04 0 0.02 -0 0</pose>
+        <axis>
+          <xyz>-0 -1 -0</xyz>
+        </axis>
+      </joint>
+
+      <joint name='rf_joint' type='fixed'>
+        <parent>base_link</parent>
+        <child>right_forward_drive_link</child>
+        <pose>0 0.04 0 0 -0 0</pose>
+        <axis>
+          <xyz>-0 -1 -0</xyz>
+        </axis>
+      </joint>
+
+      <joint name='lf_joint' type='fixed'>
+        <parent>base_link</parent>
+        <child>left_forward_drive_link</child>
+        <pose>0 -0.04 0 0 -0 0</pose>
+        <axis>
+          <xyz>0 1 0</xyz>
+        </axis>
+      </joint>
+
+      <joint name='rb_joint' type='fixed'>
+        <parent>base_link</parent>
+        <child>right_back_drive_link</child>
+        <pose>0 -0.04 0 0 -0 0</pose>
+        <axis>
+          <xyz>0 1 0</xyz>
+        </axis>
+      </joint>
+
+      <joint name='lidar_joint' type='fixed'>
+        <parent>base_link</parent>
+        <child>left_lidar_link</child>
+        <pose>0 0 0 0 0 0</pose>
+        <axis>
+          <xyz>0 0 1</xyz>
+        </axis>
+      </joint>
+
+      <!-- <joint name='right_lidar_joint' type='fixed'>
+        <parent>base_link</parent>
+        <child>right_lidar_link</child>
+        <pose>0 0 0 0 0 0</pose>
+        <axis>
+          <xyz>0 0 1</xyz>
+        </axis>
+      </joint> -->
+
+      <plugin name='gazebo_ros_mecanum_diff_drive' filename='libgazebo_ros_mecanum_diff_drive.so'>
+        <commandTopic>cmd_vel</commandTopic>
+        <odometryTopic>odom_clean</odometryTopic>
+        <odometryFrame>odom</odometryFrame>
+        <robotBaseFrame>base_link</robotBaseFrame>
+        <LeftRear>lb_joint</LeftRear>
+        <LeftFront>lf_joint</LeftFront>
+        <RightFront>rf_joint</RightFront>
+        <RightRear>rb_joint</RightRear>
+        <odometryRate>20</odometryRate>
+        <publishWheelTF>1</publishWheelTF>
+        <publishWheelJointState>1</publishWheelJointState>
+        <WheelTorque>1</WheelTorque>
+        <WheelSeparationW>0.5</WheelSeparationW>
+        <WheelSeparationL>0.6</WheelSeparationL>
+        <wheelAccel>5</wheelAccel>
+        <wheelDiameter>0.13</wheelDiameter>
+        <publishOdom>0</publishOdom>
+        <isRollerModel>1</isRollerModel>
+      </plugin>
+
+      <plugin name="ar_ht_joint_state" filename="libgazebo_ros_joint_state_publisher.so">
+        <ros>
+          <remapping>~/out:=joint_states_clean</remapping>
+        </ros>
+        <update_rate>31</update_rate>
+        <joint_name>lb_joint</joint_name>
+        <joint_name>lf_joint</joint_name>
+        <joint_name>rf_joint</joint_name>
+        <joint_name>rb_joint</joint_name>
+      </plugin>   
+      
+      <plugin name="imu_plugin" filename="libgazebo_ros_imu.so">
+        <alwaysOn>true</alwaysOn>
+        <bodyName>base_link</bodyName>
+        <topicName>imu</topicName>
+        <serviceName>imu_service</serviceName>
+        <gaussianNoise>0.0</gaussianNoise>
+        <updateRate>20.0</updateRate>
+      </plugin>
+
+      <plugin name="object_controller" filename="libgazebo_ros_planar_move.so">
+        <commandTopic>cmd_vel</commandTopic>
+        <odometryTopic>odom_clean</odometryTopic>
+        <odometryFrame>odom</odometryFrame>
+        <odometryRate>20.0</odometryRate>
+        <robotBaseFrame>base_link</robotBaseFrame>
+      </plugin>
+
+    </model>
+
+    <model name='mecanum_hand'>
+      <pose>0.01149 -0.000672 0.210422 0 0 -1.55537</pose>
+      <link name='base_hand_link'>
+        <pose>0.000378 0.127896 -0.236257 0 -0 0</pose>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        
+        <visual name='base_hand_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/Hand_base.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>.175 .175 .175  1.0</ambient>
+            <diffuse>.175 .175 .175  1.0</diffuse>
+            <specular>.175 .175 .175 1.000000 1.500000</specular>
+          </material>
+        </visual>
+
+        <collision name='base_hand_collision'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/Hand_base.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>10.01</mu>
+                <mu2>10.01</mu2>
+                <fdir1>0 0 1</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>100000.0</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0.0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1000000000.0</kp>
+                <kd>10000.0</kd>
+                <max_vel>100.0</max_vel>
+                <min_depth>0.01</min_depth>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+
+      <link name='raise_hand_link'>
+        <pose>-0.000508 0.125033 -0.063674 0 -0 0</pose>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        
+        <visual name='raise_hand_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/Hand_raise.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>.175 .175 .175  1.0</ambient>
+            <diffuse>.175 .175 .175  1.0</diffuse>
+            <specular>.175 .175 .175 1.000000 1.500000</specular>
+          </material>
+        </visual>
+
+        <collision name='raise_hand_collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/Hand_raise.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>10.01</mu>
+                <mu2>10.01</mu2>
+                <fdir1>0 0 1</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>100000.0</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0.0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1000000000.0</kp>
+                <kd>10000.0</kd>
+                <max_vel>100.0</max_vel>
+                <min_depth>0.01</min_depth>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+
+      <link name='rotator_hand_link'>
+        <pose>2.6e-05 0.123697 -0.172025 0 -0 0</pose>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        
+        <visual name='rotator_hand_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/Hand_rotator.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>.175 .175 .175  1.0</ambient>
+            <diffuse>.175 .175 .175  1.0</diffuse>
+            <specular>.175 .175 .175 1.000000 1.500000</specular>
+          </material>
+        </visual>
+
+        <collision name='rotator_hand_collision'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/Hand_rotator.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>10.01</mu>
+                <mu2>10.01</mu2>
+                <fdir1>0 0 1</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>100000.0</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0.0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1000000000.0</kp>
+                <kd>10000.0</kd>
+                <max_vel>100.0</max_vel>
+                <min_depth>0.01</min_depth>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+
+      <link name='raise_gripper_link'>
+        <pose>0.002416 -0.186439 0.153428 -0.000411 -0 -0.000487</pose>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        
+        <visual name='raise_gripper_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/Gripper_raise.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>.175 .175 .175  1.0</ambient>
+            <diffuse>.175 .175 .175  1.0</diffuse>
+            <specular>.175 .175 .175 1.000000 1.500000</specular>
+          </material>
+        </visual>
+
+        <collision name='raise_gripper_collision'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/Gripper_raise.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>10.01</mu>
+                <mu2>10.01</mu2>
+                <fdir1>0 0 1</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>100000.0</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0.0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1000000000.0</kp>
+                <kd>10000.0</kd>
+                <max_vel>100.0</max_vel>
+                <min_depth>0.01</min_depth>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+
+      <link name='rotator_gripper_link'>
+        <pose>-0.000545 0.078072 0.149092 0 -0 0</pose>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        
+        <visual name='rotator_gripper_visual'>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/Gripper_rotator.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>.175 .175 .175  1.0</ambient>
+            <diffuse>.175 .175 .175  1.0</diffuse>
+            <specular>.175 .175 .175 1.000000 1.500000</specular>
+          </material>
+        </visual>
+
+        <collision name='rotator_gripper_collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/Gripper_rotator.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>10.01</mu>
+                <mu2>10.01</mu2>
+                <fdir1>0 0 1</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>100000.0</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0.0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1000000000.0</kp>
+                <kd>10000.0</kd>
+                <max_vel>100.0</max_vel>
+                <min_depth>0.01</min_depth>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+
+      <link name='gripper_link'>
+        <pose>-0.001767 -0.268257 0.169437 -0.076231 0.00042 0.003013</pose>
+        <inertial>
+          <mass>1</mass>
+          <inertia>
+            <ixx>0.166667</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.166667</iyy>
+            <iyz>0</iyz>
+            <izz>0.166667</izz>
+          </inertia>
+        </inertial>
+        
+        <visual name='gripper_visual'>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/Gripper.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>.3 .3 .3  1.0</ambient>
+            <diffuse>.7 .7 .7  1.0</diffuse>
+            <specular>0.01 0.01 0.01 1.000000 1.500000</specular>
+          </material>
+        </visual>
+
+        <collision name='gripper_collision'>
+          <laser_retro>0</laser_retro>
+          <max_contacts>10</max_contacts>
+          <pose>0 0 0 0 -0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>/home/nequamy/mecanum_ws/src/mecanum_base/meshes/Gripper.dae</uri>
+              <scale>1 1 1</scale>
+            </mesh>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>10.01</mu>
+                <mu2>10.01</mu2>
+                <fdir1>0 0 1</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+            </friction>
+            <bounce>
+              <restitution_coefficient>0.0</restitution_coefficient>
+              <threshold>100000.0</threshold>
+            </bounce>
+            <contact>
+              <ode>
+                <soft_cfm>0.0</soft_cfm>
+                <soft_erp>0.2</soft_erp>
+                <kp>1000000000.0</kp>
+                <kd>10000.0</kd>
+                <max_vel>100.0</max_vel>
+                <min_depth>0.01</min_depth>
+              </ode>
+            </contact>
+          </surface>
+        </collision>
+      </link>
+
+      <joint name='rothand_to_base' type='fixed'>
+        <parent>base_hand_link</parent>
+        <child>rotator_hand_link</child>
+        <pose>0 0 -0.05 0 -0 0</pose>
+        <axis>
+          <xyz>0 0 1</xyz>
+        </axis>
+      </joint>
+
+      <joint name='rothand_to_raihand' type='fixed'>
+        <parent>rotator_hand_link</parent>
+        <child>raise_hand_link</child>
+        <pose>0 0 -0.09 0 -0 0</pose>
+        <axis>
+          <xyz>1 0 0</xyz>
+        </axis>
+        <axis2>
+          <xyz>-1 -0 -0</xyz>
+        </axis2>
+      </joint>
+
+      <joint name='rotgp_to_raihand' type='fixed'>
+        <parent>raise_hand_link</parent>
+        <child>rotator_gripper_link</child>
+        <pose>0 0.048 -0.044 0 -0 0</pose>
+        <axis>
+          <xyz>1 0 0</xyz>
+        </axis>
+        <axis2>
+          <xyz>-1 -0 -0</xyz>
+        </axis2>
+      </joint>
+
+      <joint name='raigp_to_rotgp' type='fixed'>
+        <parent>rotator_gripper_link</parent>
+        <child>raise_gripper_link</child>
+        <pose>0.002 0.05 -0.01 0 -0 0</pose>
+        <axis>
+          <xyz>-0 -1 -0</xyz>
+        </axis>
+      </joint>
+
+      <joint name='gp_to_raigp' type='fixed'>
+        <parent>raise_gripper_link</parent>
+        <child>gripper_link</child>
+        <pose>0 0.08 0 0 -0 0</pose>
+        <axis>
+          <xyz>-0 -1 -0</xyz>
+        </axis>
+      </joint>
+    </model>
+
+    <joint name='hand_to_base' type='fixed'>
+      <parent>mecanum_sdf::base_link</parent>
+      <child>mecanum_hand::base_hand_link</child>
+      <pose>0 0 -0.03 0 -0 0</pose>
+    </joint>
+  </model>
+</sdf>

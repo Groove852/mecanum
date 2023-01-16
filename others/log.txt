@@ -1,0 +1,108 @@
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[robot_state_publisher-3] [INFO] [1671466802.597024170] [rclcpp]: signal_handler(signum=2)
+[rviz2-4] [INFO] [1671466802.596985952] [rclcpp]: signal_handler(signum=2)
+[rviz2-4] Warning: Invalid frame ID "LBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "LFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RBwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
+[rviz2-4] Warning: Invalid frame ID "RFwheel_Link" passed to canTransform argument source_frame - frame does not exist
+[rviz2-4]          at line 93 in ./src/buffer_core.cpp
